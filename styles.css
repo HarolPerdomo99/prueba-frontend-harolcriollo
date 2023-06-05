@@ -1,0 +1,569 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.header-top {
+    /* Estilos del header top */
+}
+
+.header-middle {
+    /* Estilos del header middle */
+}
+
+.header-bottom {
+    /* Estilos del header bottom */
+}
+
+/* Estilos del slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .slider-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  .slider-slide {
+    flex: 1 0 100%;
+  }
+  
+  .slider-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slider-navigation {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(50%);
+    text-align: center;
+  }
+  
+  /* Estilos de los botones de navegación */
+  .slider-navigation button {
+    background-color: #00000065;
+    color: #fff;
+    font-size: 42px;
+    border: none;
+    border-radius: 50%;
+    padding: 15px 30px;
+    margin: 0 5px;
+    cursor: pointer;
+    outline: none;
+    
+  }
+
+  .slider-navigation .slider-prev {
+    float: left;
+  }
+  
+
+  .slider-navigation .slider-next {
+    float: right;
+  }
+
+  /* Estilos de los botones de navegación al pasar el mouse */
+  .slider-navigation button:hover {
+    background-color: #00000065;
+    outline: none;
+  }
+
+  /* section banner 2 */
+
+  .titulo{
+    text-align: center;
+  }
+
+  .banner2 {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Ocupar el 100% del viewport height */
+  }
+  
+  .banner2 .image-wrapper {
+    flex-basis: 50%; /* Ocupar el 50% del espacio disponible */
+    overflow: hidden;
+  }
+  
+  .banner2 .image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajustar la imagen para llenar el contenedor */
+  }
+
+  
+/* estilos del slider de productos */
+.slider-producto {
+  width: 100%;
+  overflow: hidden;
+  margin-top: -150px;
+  margin-bottom: 80px;
+}
+
+.slide-producto {
+  display: flex;
+  width: 100%; /* Cambiamos el ancho al 100% */
+  transition: transform 0.3s ease-in-out;
+  overflow-x: scroll; /* Agregamos desplazamiento horizontal */
+  scroll-snap-type: x mandatory; /* Hacemos que los elementos se desplacen de forma "snap" */
+  -webkit-overflow-scrolling: touch; /* Añadimos soporte para scroll suave en iOS */
+}
+
+.card {
+  width: 20%;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid rgb(170, 166, 166);
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  flex-shrink: 0; /* Evita que los elementos se reduzcan cuando haya poco espacio */
+  scroll-snap-align: start; /* Hacemos que los elementos se alineen en el inicio del scroll */
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+.card p {
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+/* Estilo adicional para dar un aspecto elegante a las cartas */
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button-container-vermas {
+  text-align: center; /* Centramos el contenido del contenedor */
+  margin-top: 20px; /* Agregamos un margen superior para separar del slider */
+}
+
+#ver-mas {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: yellow;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+}
+
+#ver-mas:hover {
+  background-color: #000000;
+  color: yellow;
+}
+
+
+
+
+
+
+
+  /* Estilos del header -header header header header -header header header header -header header header*/
+  .header {
+    background-color: yellow;
+    padding: 10px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: flex-end; /* Alineación a la derecha */
+    align-items: center;
+    font-size: 14px;
+    color: black;
+    background-color: yellow;
+    height: 40px;
+    font-weight: bold;
+    
+}
+
+.header-top span {
+    margin-right: 10px; /* Espacio entre elementos */
+}
+
+.header-middle {
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; 
+    background-color: black;
+    max-width: 102%;
+    box-sizing: border-box; 
+    margin-left: -10px;
+}
+
+
+.logo {
+    width: 150px;
+}
+
+.menu {
+    display: flex;
+    align-items: start;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 10px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.search-icon,
+.favorites-icon,
+.cart-icon {
+    margin-left: 8px;
+    margin-right: 20px;
+}
+
+.header-bottom {
+    background-color: yellow;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header-bottom p {
+    margin: 0;
+}
+
+/* Estilos del menú */
+.menu-options {
+    display: flex;
+    justify-content: space-between;
+   /* border-bottom: 2px solid white; */
+    padding-bottom: 5px;
+}
+
+.menu-options li {
+    position: relative;
+    margin-right: 100px;
+}
+
+.menu-options li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu-options li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Estilos del dropdown */
+.dropdown {
+    position: absolute;
+    width: 100%;
+    background-color: #474545;
+    display: none;
+    top: 100%;
+    left: 0;
+    
+}
+
+.dropdown ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown li {
+    flex-basis: 25%;
+}
+
+.menu-options li:hover .dropdown {
+    display: block;
+}
+
+/* Estilos de la animación */
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.header-bottom p {
+    margin: 0;
+    animation: slide-in 40s linear infinite;
+}
+
+
+
+.menu-options li::after {
+    content: "";
+    position: absolute;
+     width: 100%;
+     height: 2px;
+     bottom: -2px;
+     left: 0;
+     background-color: yellow; 
+     transform: scaleX(0);
+     transition: transform 0.3s ease;
+}
+
+.menu-options li:hover::after {
+  transform: scaleX(1);
+}
+/*fin del codigo del header - header -header
+
+
+
+
+
+
+
+
+  /* ESTILOS DE FOOTER - FOOTER - FOOTER -FOOTER -FOOTER -FOOTER - FOOTER - FOOTER -FOOTER -FOOTER -FOOTER*/
+          /* Estilos del footer */
+    
+          footer input[type="email"] {
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+            width: 510px;
+            height: 32px;
+            margin-left: 330px;
+          }
+      
+          footer label {
+            display: block;
+            margin-bottom: 10px;
+          }
+      
+          /* estilo boton */
+          footer button {
+            background-color: hsl(64, 94%, 50%);
+            ;
+            color: #000000;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            height: 45px;
+            width: 180px;
+          }
+      
+          footer .footer-bottom {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-top: 20px;
+          }
+      
+          footer .footer-bottom .menu-column {
+            flex: 1 1 25%;
+            max-width: 25%;
+            padding: 0 10px;
+            margin-bottom: 20px;
+          }
+      
+          footer .footer-bottom .menu-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            color: #ffffff;
+          }
+      
+          footer .footer-bottom .menu-items a {
+            display: block;
+            color: #6d6b6b;
+            text-decoration: none;
+            margin-bottom: 0px;
+          }
+      
+          footer .footer-bottom .menu-items a:hover {
+            text-decoration: underline;
+          }
+      
+      
+      
+          /* Footer */
+          .footer-top {
+            background-color: rgb(0, 0, 0);
+            color: #fcf6f6;
+            width: auto;
+            height: auto;
+      
+          }
+      
+          .ntitle {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 30px;
+      
+          }
+      
+          .ntext {
+            text-align: center;
+            font-size: 18px;
+      
+          }
+      
+          .tdatos {
+            margin-left: 330px;
+          }
+      
+          .linea {
+            width: 670px;
+            margin-left: 350px;
+            height: 3px; /* Define el grosor de la línea */
+            background-color: hsl(64, 94%, 50%);
+          }
+      
+      
+          .footer-middle {
+            background-color: hsl(64, 94%, 50%);
+          }
+      
+      
+      
+      
+          footer .footer-bottom .menu-items-redes a {
+            display: block;
+            text-decoration: none;
+            margin-bottom: 5px;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: #000000;
+            background-color: #ffffff;
+            transition: background-color 0.3s ease;
+      
+      
+      
+          }
+      
+          footer .footer-bottom .menu-items-redes a:hover {
+            background-color: #000000;
+            /* Hover blanco */
+            color: #ffffff;
+          }
+      
+          .linea-footer {
+            width: 100%;
+            height: 1px;
+            background-color: #ffffff;
+          }
+  
+/* estilos boton de whatsapp*/
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.whatsapp-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .header-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-icon,
+  .favorites-icon,
+  .cart-icon {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .slider-prev,
+  .slider-next {
+    font-size: 18px;
+  }
+
+  .titulo h1 {
+    font-size: 24px;
+  }
+
+  .banner2 {
+    flex-wrap: wrap;
+  }
+
+  .image-wrapper {
+    margin: 10px 0;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .menu-column {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .footer-middle {
+    padding: 0;
+  }
+}
